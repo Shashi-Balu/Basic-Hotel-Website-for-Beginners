@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Gift Card | Gateau Healthy Restaurant</title>
+        <link rel = "stylesheet" href = "gift card.css">
+    </head>
+
+    <body>
+        <div class = "header">
+            <img src = "https://miro.medium.com/max/850/0*hNBbQ8KOFqTFtTU5">
+        </div>
+
+        <div class = "list">
+            <h3>Give a Gift</h3>                 
+                    <h4>Choose Amount</h4>
+                    <form method="POST" name="myForm" >
+                                    <label>Amount *</label>
+                                <input type="number" name ="idAmount" placeholder="Amount">
+                        
+                            
+                            <h4>Personalize</h4>
+                                <label>To</label>
+                                    <input type="text" name="idReceiver" placeholder="Receiver Name"><br>
+                                <label>From</label>
+                                    <input type="text" name="idSender" placeholder="Sender Name"><br>
+                                <label>Message</label>
+                                <textarea placeholder="Message"></textarea>
+
+                            <h4>Schedule Delivery</h4>
+                                <label>Sender Mobile</label>
+                                    <input type="tel"  name="idSMobile" placeholder="Sender Mobile"><br>
+                                <label>Receiver Mobile</label>
+                                    <input type="tel" name="idRMobile" placeholder="Receiver Mobile"><br>
+                                <label>Delivery Date *</label>
+                                <input type="date" name="idDate"><br>
+
+                            <button onclick="myButton()" id="btn" type="submit" >Done</button>
+                        </form> 
+        </div>
+        
+        <a  href = "home.html">Back to Home</a>
+            <br><br><br>
+
+            <script>
+                function myButton()
+            {
+                var amount=document.forms["myForm"]["idAmount"].value;
+                var rName=document.forms["myForm"]["idReceiver"].value;
+                var sName=document.forms["myForm"]["idSender"].value;
+                var sPhone=document.forms["myForm"]["idSMobile"].value;
+                var rPhone=document.forms["myForm"]["idRMobile"].value;
+                var date=document.forms["myForm"]["idDate"].value;
+               
+                if(amount=="")
+                {
+                alert("Please enter desired Amount");
+                document.forms["myForm"]["idAmount"].style.background="transparent";
+                return false;
+                }
+                if(rName=="")
+                {
+                    alert("You have not entered Receiver Name");
+                    document.forms["myForm"]["idReceiver"].style.background="transparent";
+                    return false;
+                }
+                if(sName=="")
+                {
+                    alert("You have not entered Your Sender Name");
+                    document.forms["myForm"]["idSender"].style.background="transparent";
+                    return false;
+                }
+                if(sPhone=="")
+                {
+                alert("You have not entered Sender Mobile Number");
+                document.forms["myForm"]["idSMobile"].style.background="transparent";
+                return false;
+                }
+                if(rPhone=="")
+                {
+                    alert("You have not entered Your Receiver Mobile Number");
+                    document.forms["myForm"]["idRMobile"].style.background="transparent";
+                    return false;
+                }
+                if(date=="")
+                {
+                    alert("You have not selected Date");
+                    document.forms["myForm"]["idDate"].style.background="transparent";
+                    return false;
+                } 
+                alert("Your Gift Card has been Processed.");
+            }
+            </script>
+    </body>
+</html>

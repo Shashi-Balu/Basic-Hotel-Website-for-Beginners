@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Contact Us | Gateau Healthy Restaurant</title>
+        <link rel = "stylesheet" href = "contact.css">
+    </head>
+
+    <body>
+        <img src = "https://www.quay.com.au/wp-content/uploads/2019/02/Quaycontactusform.jpg">  
+        <h2>GET WHAT YOU CRAVE FOR</h2>
+            <form method="POST" name="myForm" onsubmit="return myButton()">
+                
+                <input type = "text" name="idName" placeholder="Name"></input><br>
+
+                
+                <input type = "text" name="idEmail" placeholder="Email"></input><br>
+
+                
+                <input type = "tel" name="idNumber" placeholder="Mobile Number"></input><br>
+
+                
+                <textarea placeholder="Message"></textarea><br>
+            </form>
+
+        <button type="submit" value="submit" id="btn" onclick="myButton()">Submit</button><br>
+
+        <a href = "home.html">Back to Home</a>
+        <br><br>
+
+        <script>
+            function myButton()
+            {
+                var name=document.forms["myForm"]["idName"].value;
+                var email=document.forms["myForm"]["idEmail"].value;
+                var number=document.forms["myForm"]["idNumber"].value;
+                if(name=="")
+                {
+                alert("You have not entered Your Name");
+                document.forms["myForm"]["idName"].style.background="transparent";
+                return false;
+                }
+                if(email=="")
+                {
+                    alert("You have not entered Your Email");
+                    document.forms["myForm"]["idEmail"].style.background="transparent";
+                    return false;
+                }
+                if(number=="")
+                {
+                    alert("You have not entered Your Mobile Number");
+                    document.forms["myForm"]["idNumber"].style.background="transparent";
+                    return false;
+                } 
+                alert("Thank You and Welcome");
+            }
+        </script>
+    </body>
+</html>

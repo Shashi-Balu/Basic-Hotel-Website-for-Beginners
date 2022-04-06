@@ -1,0 +1,126 @@
+body, html
+{
+    height: 100%;
+    margin: 0;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+.bg-image
+{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.logo
+{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRANBVBeA43gwIdrWOoHGdf_zLhwXUjnnm89Q&usqp=CAU");
+    background-repeat: no-repeat;
+    float:left;
+    height: 100%;
+    width: 100%;
+    background-size: 6.5%;
+    margin-top: -47px;
+}
+
+.main
+{
+    background-image:linear-gradient(rgba(255,160,122,0.7),rgba(0,0,0,0.3)),
+    url("https://theviewfromgreatisland.com/wp-content/uploads/2011/11/dark-chocolate-and-walnut-cake-image.jpg");
+    transition: all 0.3s ease; 
+}
+.menu
+{
+    background-image:linear-gradient(rgba(255,255,0,0.3), rgba(255,255,255,0.3)),
+     url("https://media-cdn.tripadvisor.com/media/photo-s/13/4a/96/51/1-150.jpg");
+     transition: all 0.3s ease;
+}
+.giftCard
+{
+    background-image: linear-gradient(rgba(255,0,0,0.3), rgba(255,255,255,0.3)),
+    url("https://www.nrn.com/sites/nrn.com/files/restaurant-gift-card-makes-good-gift.jpg"); 
+    transition: all 0.3s ease;
+}
+.bookTable
+{
+    background-image:  linear-gradient(rgba(192,192,192,0.3), rgba(210,180,140,0.3)),
+    url("https://www.hillcrossfurniture.co.uk/blog/wp-content/uploads/2011/08/Market-Grounds-091-700x700.jpg"); 
+    transition: all 0.3s ease;
+}
+.contact
+{
+    background-image:  linear-gradient(rgba(255,0,0,0.3), rgba(255,255,255,0.3)),
+    url("https://i.ndtvimg.com/i/2015-12/strawberry-625_625x350_71451329986.jpg"); 
+    transition: all 0.3s ease;
+}
+
+.title
+{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border: 10px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 400px;
+    padding: 0px;
+    text-align: center;
+}
+.fa
+{    
+    padding: 10px;
+    float: right;
+    font-size: 40px;
+    width: 30px;
+    text-decoration: none;
+    margin: 5px 5px;
+    color: white;
+    
+  }
+
+.fa:hover 
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+.link
+{  
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 45%;
+    background-color: transparent;
+    border:2;
+    border-radius: 75px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    border-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 5px;
+}
+
+.link:hover
+{
+    background-color: rgba(176,224,230,0.5);
+}
+

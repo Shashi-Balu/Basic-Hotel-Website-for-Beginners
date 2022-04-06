@@ -1,0 +1,88 @@
+body, html
+{
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+img
+{
+    height: 60%;
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+    overflow: hidden;
+}
+
+.image{
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(80%);
+  }
+  
+  .image:hover {
+    filter: brightness(100%);
+    transform: scale(1.025);
+  }
+
+p
+{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    color: #4d0000;
+    background-color:wheat;
+}
+
+ul
+{
+    list-style: none;
+    column-count: 2;
+    font-family: calibri;
+    margin-bottom: 100px;
+}
+
+a
+{
+    text-decoration: none;
+    color:rgb(134, 48, 48);
+    font-size: 30px;
+    font-weight: bold;
+    border: 2;
+    border-radius: 75px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin-left: 40%;
+}
+
+a:hover
+{
+    background-color: rgba(173,173,133,0.3);
+}
+
+.title1
+{
+    font-size: 50px;
+    color:saddlebrown;
+}
+
+.title2
+{
+    font-size: 30px;
+    padding: 5px;
+    color:#4d0000;
+}
+
+.food
+{
+    font-size:20px;
+    padding: 15px; 
+    color:dimgrey;
+}
+
+.content
+{
+    padding-left: 80px;
+}

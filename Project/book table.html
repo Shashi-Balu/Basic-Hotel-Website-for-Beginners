@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Book Table | Gateau Healthy Restaurant</title>
+        <link rel = "stylesheet" href="book table.css">
+    </head>
+
+    <body>
+            <img class="main" src = "https://tsanteleina.com/en/wp-content/uploads/sites/2/2014/11/XDA8901.jpg">
+        
+            <h2>BOOK YOUR TABLE</h2>
+            <form method="POST" name="myForm" onsubmit="return myButton()">
+                    <label for="number">
+                        <img class="logo" src="https://cdn2.iconfinder.com/data/icons/4web-3/139/header-account-image-line-512.png">
+                    </label>
+                    <select name="idMember" value="7" >
+                        <option value="">Number of Members</option>
+                        <option value="1">1 person</option>
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4">4 people</option>
+                        <option value="5">5 people</option>
+                        <option value="max">Large Party</option>
+                    </select><br>
+    
+                    <label for="date">
+                        <img class="logo" src ="https://www.pngkey.com/png/full/109-1094594_calendar-clipart-png-transparent-calendar-icon-transparent-background.png">
+                    </label>
+                    <input type="date" name ="idDate" required></input><br>
+    
+                    <label for="time" required>
+                        <img class="logo" src="https://img.icons8.com/pastel-glyph/2x/clock--v2.png">
+                    </label>
+                    <input type="time" name ="idTime"></input><br>
+    
+                </form>
+         <button id="btn" onclick="myButton()">Book </button><br>
+
+         <a  href = "home.html">Back to Home</a>
+            <br><br>
+
+            <script>
+                function myButton()
+                {
+                    var member=document.forms["myForm"]["idMember"].value;
+                    var date=document.forms["myForm"]["idDate"].value;
+                    var time=document.forms["myForm"]["idTime"].value;
+
+                    if(member=="")
+                    {
+                    alert("How many members you are?");
+                    document.forms["myForm"]["idName"].style.background="transparent";
+                    return false;
+                    }
+                    if(date=="")
+                    {
+                        alert("Please select desired date");
+                        document.forms["myForm"]["idEmail"].style.background="transparent";
+                        return false;
+                    }
+                    if(time=="")
+                    {
+                        alert("Please select desired time");
+                        document.forms["myForm"]["idNumber"].style.background="transparent";
+                        return false;
+                    } 
+                    alert("Your table has been booked.");
+                }
+                    
+            </script>
+        
+    </body>
+</html>
